@@ -1,0 +1,18 @@
+.front-side {
+  background-color: rgb(12, 218, 233);
+  border: solid 1px #ffffff;
+  border-radius: 4px;
+}
+
+.back-side {
+  background-color: rgb(95, 150, 196);
+  border: solid 1px #ffffff;
+  border-radius: 4px;
+}
+
+.flippy-container {
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+}
