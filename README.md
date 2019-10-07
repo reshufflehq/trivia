@@ -10,7 +10,7 @@ This project was inspired from [react-trivia](https://github.com/ccoenraets/reac
 
 ## Screenshots
 
-<img src="./app-screen.png" width="50%" height="50%">
+<img src="./app-screen.png" width="80%" height="80%">
 
 ## Data
 
