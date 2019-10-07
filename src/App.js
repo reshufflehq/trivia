@@ -58,8 +58,8 @@ export default function App() {
   /**
    * Calculate the rows of the board game by the largest number of the questions with in category
    */
-  function updateBoardRows() {
-    data.forEach(category => {
+  function updateBoardRows(triviaData) {
+    triviaData.forEach(category => {
       if (category.questions.length > rows) {
         rows = category.questions.length;
       }
@@ -70,11 +70,11 @@ export default function App() {
   /**
    * Update rows with cards, each card will include question and answer
    */
-  const setDataOnBoard = () => {
+  const setDataOnBoard = triviaData => {
     const rowList = [];
     let indexRow = 0;
     while (rows > indexRow) {
-      const cardsInARow = getQuestionsByRow(indexRow);
+      const cardsInARow = getQuestionsByRow(indexRow, triviaData);
       rowList.push(<Row className='q-row'>{cardsInARow}</Row>);
       indexRow++;
     }
@@ -85,8 +85,8 @@ export default function App() {
   /**
    * Calculate card height
    */
-  const setBoardSize = () => {
-    updateBoardRows();
+  const setBoardSize = triviaData => {
+    updateBoardRows(triviaData);
     let headerHeight = windowDimensions.width > 640 ? 95 : 32;
     height = { height: (windowDimensions.height - headerHeight) / rows };
   };
@@ -94,9 +94,9 @@ export default function App() {
   /**
    * Set questions cards in a row by category
    */
-  const getQuestionsByRow = rowIndex => {
+  const getQuestionsByRow = (rowIndex, triviaData) => {
     const rowData = [];
-    data.forEach((category, categoryIndex) => {
+    triviaData.forEach((category, categoryIndex) => {
       rowData.push(
         <Col className='q-col align-self-center'>
           <QuestionCard
