@@ -4,9 +4,11 @@ This is a [Reshuffle](https://reshuffle.com/) template.
 
 ## About
 
-React trivia game using Reshuffle platform and react js.
+React trivia game is questions-answer flipping cards game.
 
-This project was inspired from [react-trivia](https://github.com/ccoenraets/react-trivia) repository.
+The questions set in a columns by category, on clicking the card, the card will flip and the answer will be display.
+
+This project demonstrate the use of Reshuffle platform and react js and was inspired from [react-trivia](https://github.com/ccoenraets/react-trivia) repository.
 
 ## Screenshots
 
@@ -14,34 +16,42 @@ This project was inspired from [react-trivia](https://github.com/ccoenraets/reac
 
 ## Data
 
-Trivia questions array, questions by category:
+Trivia questions array, questions by category.
+
+Sample data:
 
 ```json
 [
   {
-    "category": "React 101",
+    "category": "Feeling Lucky",
     "questions": [
       {
         "points": 100,
-        "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-        "answer": "B. The View"
+        "question": "Using the proposed ECMAScript module syntax, how do you load the Mortgage.js module from the current directory and make all its members available in an object named mortgage?",
+        "answer": "<code>import * as mortgage from './Mortgage';</code>"
       },
       {
         "points": 200,
-        "question": "_____ lets you create JavaScript objects using HTML syntax",
-        "answer": "JSX"
+        "question": "Which first 'external' feature was written in React?",
+        "answer": "Instagram's feed"
       },
       {
         "points": 300,
-        "question": "What tool can you use to transpile JSX?",
-        "answer": "Babel"
+        "question": "What's the date of the first React commit on GitHub?",
+        "answer": "May 29th, 2013"
       },
       {
         "points": 400,
-        "question": "React uses a _____________ to limit direct manipulation of the DOM and improve performance",
-        "answer": "Virtual DOM"
+        "question": "What's the hex color of the React logo?",
+        "answer": "#61DAFB"
       }
     ]
   }
 ]
 ```
+
+## Future Features List
+
+- Support scoring system
+- Store answers in backend
+- Multiplayer game
