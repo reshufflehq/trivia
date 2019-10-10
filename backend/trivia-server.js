@@ -1,5 +1,5 @@
 import { update } from '@reshuffle/db';
-import errorType from './constants';
+import { errors } from 'levelup';
 
 /**
  * Get trivia questions
@@ -11,8 +11,8 @@ export async function getTriviaData() {
       return result;
     });
   } catch (error) {
-    console.error('getTriviaData -> error', error.message);
-    return new Error(errorType.fetch);
+    console.error('getTriviaData -> error', error);
+    throw new Error(error);
   }
 }
 

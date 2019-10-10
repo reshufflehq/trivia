@@ -50,7 +50,6 @@ export default function App() {
         setDataOnBoard(triviaData);
       }
     } catch (error) {
-      if (error === errorType.FETCH) setError(error);
       setDisplay(Display.error);
     }
   };
