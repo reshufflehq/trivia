@@ -8,12 +8,12 @@
           "questions": [
             {
               "points": 100,
-              "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+              "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li></ol>",
               "answer": "B. The View"
             },
             {
               "points": 200,
-              "question": "_____ lets you create JavaScript objects using HTML syntax",
+              "question": "_____ lets you create JavaScript objects using HTML-like syntax",
               "answer": "JSX"
             },
             {
@@ -48,7 +48,7 @@
             },
             {
               "points": 400,
-              "question": "Which lifecycle method is invoked once, immediately after the initial rendering occurs?",
+              "question": "Which Class lifecycle method is invoked once, immediately after the initial rendering occurs?",
               "answer": "componentDidMount"
             }
           ]
@@ -73,8 +73,8 @@
             },
             {
               "points": 400,
-              "question": "<p>What's being logged and name 4 new features of ES6 used in this code snippet?</p><code>let greeting = (name, msg='Hello') => `${msg}, ${name}`;<br/>console.log(greeting('Christophe');</code>",
-              "answer": "<p>Hello, Christophe</p><ul><li>let variables</li><li>Arrow functions</li><li>Default parameters</li><li>Template strings</li></ul>"
+              "question": "<p>What's being logged and name 4 new features of ES6 used in this code snippet?</p><code>let greeting = (name, msg='Hello') => `${msg}, ${name}`;<br/>console.log(greeting('Christopher');</code>",
+              "answer": "<p>Hello, Christopher</p><ul><li>let variables</li><li>Arrow functions</li><li>Default parameters</li><li>Template strings</li></ul>"
             }
           ]
         },
@@ -88,13 +88,13 @@
             },
             {
               "points": 200,
-              "question": "How was the first 'external' user of React?",
+              "question": "Which first 'external' feature was written in React?",
               "answer": "Instagram's feed"
             },
             {
               "points": 300,
               "question": "What's the date of the first React commit on GitHub?",
-              "answer": "May 26th, 2013"
+              "answer": "May 29th, 2013"
             },
             {
               "points": 400,
