@@ -7,9 +7,7 @@ import { errors } from 'levelup';
 /* @expose */
 export async function getTriviaData() {
   try {
-    return update('trivia', (result = data) => {
-      return result;
-    });
+    return await update('trivia', (result = data) => result);
   } catch (error) {
     console.error('getTriviaData -> error', error);
     throw new Error(error);
