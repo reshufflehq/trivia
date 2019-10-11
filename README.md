@@ -4,11 +4,11 @@ This is a [Reshuffle](https://reshuffle.com/) template.
 
 ## About
 
-React trivia game is questions-answer flipping cards game.
+React trivia game is a game where you flip cards to see answers to the questions presented.
 
-The questions set in a columns by category, on clicking the card, the card will flip and the answer will be display.
+Each column is a category of questions, and once you click on a card, it will flip to display its answer.
 
-This project demonstrate the use of Reshuffle platform and react js and was inspired from [react-trivia](https://github.com/ccoenraets/react-trivia) repository.
+This project demonstrates the use of Reshuffle platform and react js and was inspired from [react-trivia](https://github.com/ccoenraets/react-trivia) repository.
 
 ## Screenshots
 
