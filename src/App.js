@@ -9,10 +9,9 @@ import Col from 'react-bootstrap/Col';
 import { getTriviaData } from '../backend/trivia-server';
 import Headers from './components/Headers/Headers';
 import QuestionCard from './components/Card/Card';
-import { errorType } from '../src/constants/constants';
 import { Display } from '../src/constants/enum';
 import ErrorMessage from '../src/components/Message/ErrorMessage';
-import './app.css';
+import './App.css';
 
 /**
  * Get window dimensions for calculate the height of each card
@@ -29,7 +28,6 @@ export default function App() {
   const [data, setData] = useState([]);
   const [cards, setCards] = useState([]);
   const [windowDimensions] = useState(getWindowDimensions());
-  const [setError] = useState('');
   const [display, setDisplay] = useState(Display.cards);
   let rows = 0;
   let height = 0;
