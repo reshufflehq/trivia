@@ -15,24 +15,24 @@ export const data = [
       {
         points: 100,
         question:
-          '<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li></ol>',
-        answer: 'B. The View',
+          'What happens when you call setState() inside render() method?',
+        answer: 'Stack overflow error',
       },
       {
         points: 200,
         question:
-          '_____ lets you create JavaScript objects using HTML-like syntax',
+          '___ lets you create JavaScript objects using HTML-like syntax',
         answer: 'JSX',
       },
       {
         points: 300,
-        question: 'What tool can you use to transpile JSX?',
+        question: 'Name one tool that used to transpile JSX?',
         answer: 'Babel',
       },
       {
         points: 400,
         question:
-          'React uses a _____________ to limit direct manipulation of the DOM and improve performance',
+          'React uses a _____ to limit direct manipulation of the DOM and improve performance',
         answer: 'Virtual DOM',
       },
     ],
@@ -43,20 +43,18 @@ export const data = [
       {
         points: 100,
         question:
-          "<p>Where can you define a component's initial state when you use the ES6 Class syntax?</p><ol><li>getInitialState()</li><li>getInitialProps()</li><li>The component's constructor</li></ol>",
-        answer: "C. The component's constructor",
+          '_____ can be done while more than one element needs to be returned from a component?',
+        answer: 'Wrapping',
       },
       {
         points: 200,
-        question:
-          "Using npm, which package should you require/import in addition to 'react' to render a React component in an existing DOM element of your HTML file?",
-        answer: 'react-dom',
+        question: 'In JSX most of the errors can be caught during _________.',
+        answer: 'Compilation',
       },
       {
         points: 300,
-        question:
-          '<p>Which lifecycle function should you use to set default property values?</p><ol><li>getInitialState</li><li>getInitialProps</li><li>getDefaultProps</li></ol>',
-        answer: 'C. getDefaultProps',
+        question: 'What is used to pass data to a component from outside?',
+        answer: 'props',
       },
       {
         points: 400,
@@ -73,26 +71,23 @@ export const data = [
         points: 100,
         question:
           '<p>Constants (const) are:</p><ol><li>Block scoped</li><li>Function scoped</li><li>Global</li></ol>',
-        answer: 'A. Block scoped',
+        answer: '1. Block scoped',
       },
       {
         points: 200,
         question: 'Name 3 new collection classes in ES2015',
-        answer:
-          '<ul><li>Map</li><li>WeakMap</li><li>Set</li><li>WeakSet</li></ul>',
+        answer: '<ul><li>Map</li><li>WeakMap</li><li>Set</li></ul>',
       },
       {
         points: 300,
-        question:
-          "<p>What's being logged and how is this new ES6 feature called?</p><code>var colors = ['red', 'blue', 'green'];<br/>var [primary, secondary, tertiary] = colors;<br/>console.log(secondary);</code>",
-        answer: '<ul><li>blue</li><li>Array destructuring</li></ul>',
+        question: 'How can we prevent default behavior in React?',
+        answer: 'Using preventDefault()',
       },
       {
         points: 400,
         question:
-          "<p>What's being logged and name 4 new features of ES6 used in this code snippet?</p><code>let greeting = (name, msg='Hello') => `${msg}, ${name}`;<br/>console.log(greeting('Christopher');</code>",
-        answer:
-          '<p>Hello, Christopher</p><ul><li>let variables</li><li>Arrow functions</li><li>Default parameters</li><li>Template strings</li></ul>',
+          'Which method in a React Component should you override to stop the component from updating?',
+        answer: 'shouldComponentUpdate',
       },
     ],
   },
@@ -101,9 +96,8 @@ export const data = [
     questions: [
       {
         points: 100,
-        question:
-          'Using the proposed ECMAScript module syntax, how do you load the Mortgage.js module from the current directory and make all its members available in an object named mortgage?',
-        answer: "<code>import * as mortgage from './Mortgage';</code>",
+        question: 'Lifecycle methods are mainly used____',
+        answer: 'free-up resources',
       },
       {
         points: 200,
