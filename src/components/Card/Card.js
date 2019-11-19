@@ -32,10 +32,10 @@ export default function QuestionCard({ questionDetails, height }) {
   return (
     <Flippy flipOnClick={true} flipDirection='vertical' style={height}>
       <FrontSide onClick={clickHandler} className='front-side'>
-        <span dangerouslySetInnerHTML={getLabel()}></span>
+        <span>{question}</span>
       </FrontSide>
-      <BackSide onClick={clickHandler} className='front-side'>
-        <span dangerouslySetInnerHTML={getLabel()} />
+      <BackSide onClick={clickHandler} className='back-side'>
+        <span>{answer}</span>
       </BackSide>
     </Flippy>
   );
