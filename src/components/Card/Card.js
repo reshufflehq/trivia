@@ -24,11 +24,7 @@ export default function QuestionCard({ questionDetails, height }) {
       default:
     }
   };
-  const getLabel = event => {
-    return {
-      __html: view === View.question ? question : answer,
-    };
-  };
+
   return (
     <Flippy flipOnClick={true} flipDirection='vertical' style={height}>
       <FrontSide onClick={clickHandler} className='front-side'>
