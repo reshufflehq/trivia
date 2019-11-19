@@ -93,16 +93,40 @@ export default function App() {
    */
   const getQuestionsByRow = (rowIndex, triviaData) => {
     const rowData = [];
+    const emptyState = {
+      points: 0,
+      answer: 'Empty',
+      question: 'No question',
+    };
     triviaData.forEach((category, categoryIndex) => {
-      rowData.push(
-        <Col className='q-col align-self-center'>
-          <QuestionCard
-            height={height}
-            questionDetails={category.questions[rowIndex]}
+      /* If no question is given in row fill Card with Empty State else fill
+      it with question info */
+
+      if (category.questions[rowIndex] === undefined) {
+        rowData.push(
+          <Col
             key={categoryIndex + '-' + rowIndex}
-          ></QuestionCard>
-        </Col>,
-      );
+            className='q-col align-self-center'
+          >
+            <QuestionCard
+              height={height}
+              questionDetails={emptyState}
+            ></QuestionCard>
+          </Col>,
+        );
+      } else {
+        rowData.push(
+          <Col
+            key={categoryIndex + '-' + rowIndex}
+            className='q-col align-self-center'
+          >
+            <QuestionCard
+              height={height}
+              questionDetails={category.questions[rowIndex]}
+            ></QuestionCard>
+          </Col>,
+        );
+      }
     });
     return rowData;
   };
