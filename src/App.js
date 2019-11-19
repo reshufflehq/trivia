@@ -72,7 +72,11 @@ export default function App() {
     let indexRow = 0;
     while (rows > indexRow) {
       const cardsInARow = getQuestionsByRow(indexRow, triviaData);
-      rowList.push(<Row className='q-row'>{cardsInARow}</Row>);
+      rowList.push(
+        <Row key={rows + '-' + indexRow} className='q-row'>
+          {cardsInARow}
+        </Row>,
+      );
       indexRow++;
     }
     setCards(rowList);
@@ -96,7 +100,7 @@ export default function App() {
     const emptyState = {
       points: 0,
       answer: 'Empty',
-      question: 'No question',
+      question: 'Empty',
     };
     triviaData.forEach((category, categoryIndex) => {
       /* If no question is given in row fill Card with Empty State else fill
