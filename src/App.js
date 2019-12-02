@@ -72,7 +72,11 @@ export default function App() {
     let indexRow = 0;
     while (rows > indexRow) {
       const cardsInARow = getQuestionsByRow(indexRow, triviaData);
-      rowList.push(<Row className='q-row'>{cardsInARow}</Row>);
+      rowList.push(
+        <Row key={indexRow} className='q-row'>
+          {cardsInARow}
+        </Row>,
+      );
       indexRow++;
     }
     setCards(rowList);
@@ -95,7 +99,7 @@ export default function App() {
     const rowData = [];
     triviaData.forEach((category, categoryIndex) => {
       rowData.push(
-        <Col className='q-col align-self-center'>
+        <Col key={categoryIndex} className='q-col align-self-center'>
           <QuestionCard
             height={height}
             questionDetails={category.questions[rowIndex]}
