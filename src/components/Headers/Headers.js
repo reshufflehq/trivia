@@ -12,7 +12,7 @@ export default function Headers({ data }) {
   data &&
     data.forEach((category, index) =>
       headers.push(
-        <Col className='headers justify-content-center'>
+        <Col key={index} className='headers justify-content-center'>
           {category.category}
         </Col>,
       ),
