@@ -34,7 +34,7 @@ export default function QuestionCard({ questionDetails, height }) {
       <FrontSide onClick={clickHandler} className='front-side'>
         <span dangerouslySetInnerHTML={getLabel()}></span>
       </FrontSide>
-      <BackSide onClick={clickHandler} className='front-side'>
+      <BackSide onClick={clickHandler} className='back-side'>
         <span dangerouslySetInnerHTML={getLabel()} />
       </BackSide>
     </Flippy>
